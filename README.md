@@ -1,9 +1,6 @@
 # python-fake-api
 Projeto que simula a busca de dados em uma API, e utiliza o pandas para manipulação dos dados. Projeto também conta com um módulo de Log, para facilitar possível erros e mensagens.
 
-# API Utilizada
-url: <a href="https://jsonplaceholder.typicode.com" target="_blank"> https://jsonplaceholder.typicode.com</a>
-
 # Versão do python e Bibliotecas utilizadas.
 <code>
 Python: 3.7.0<br/>
@@ -23,6 +20,12 @@ Ainda via terminal/prompt/shell navega até o pasta do projeto "python-fake-api"
 
 # Instalando bibliotecas
 Com ambiente ativado vamos instalar as bibliotecas. As libs estão dentro do arquivo <code>requeriments.txt</code>, para facilitar vamos executar o comando <code>pip install -r requirements.txt</code> que instalará todas as dependencias contidas no arquivo.
+
+# API Utilizada
+URL: <a href="https://jsonplaceholder.typicode.com/todos" target="_blank"> https://jsonplaceholder.typicode.com/todos</a><br/>
+Método: <code>GET</code> <br/>
+Credencial: <code>NÃO</code>
+
 
 # Executando o projeto.
 Com as devidas libs instaladas e projeto com ambiente ativo, vamos executar o projeto com o comando. Se estiver usando uma IDE(Vs code,etc) Você pode selecionar o arquivo main.py e compilar direto da ferramenta. Se preferir pode executar via terminal no diretório do projeto e com o ambiente virtual ativo o seguinte comando <code>python main.py</code>. Se tudo ocorrer bem, o projeto estará rodando na url <code>http://127.0.0.1:8082</code>.
