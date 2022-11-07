@@ -28,7 +28,7 @@ Credencial: <code>NÃO</code>
 
 
 # Executando o projeto.
-Com as devidas libs instaladas e projeto com ambiente ativo, vamos executar o projeto com o comando. Se estiver usando uma IDE(Vs code,etc) Você pode selecionar o arquivo main.py e compilar direto da ferramenta. Se preferir pode executar via terminal no diretório do projeto e com o ambiente virtual ativo o seguinte comando <code>python main.py</code>. Se tudo ocorrer bem, o projeto estará rodando na url <code>http://127.0.0.1:8082</code>.
+Com as devidas libs instaladas e projeto com ambiente ativo, vamos executar o projeto. Se estiver usando uma IDE(Vs code,etc) Você pode selecionar o arquivo main.py e compilar direto da ferramenta. Se preferir pode executar via terminal no diretório do projeto e com o ambiente virtual ativo o seguinte comando <code>python main.py</code>. Se tudo ocorrer bem, o projeto estará rodando na url <code>http://127.0.0.1:8082</code>.
 
 <br/>
 Obs: Caso você já tenha algum serviço rodando nessa porta, mude no arquivo main.py e procure a linha <code>app.run(host='127.0.0.1', port=8082, debug=True)</code>. Mude para porta que deseja e compile novamente o projeto.
