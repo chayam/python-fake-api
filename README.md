@@ -2,10 +2,10 @@
 Projeto que simula a busca de dados em uma API, e utiliza o pandas para manipulação dos dados. Projeto também conta com um módulo de Log, para facilitar possível erros e mensagens.
 
 # Versão do python e Bibliotecas utilizadas.
-<code>
-Python: 3.7.0<br/>
-Libs: Flask,requests,pandas,python-dotenv
-</code>
+
+<b>Python</b>: <code>3.7.0</code><br/>
+<b>Libs</b>: <code>Flask,requests,pandas,python-dotenv</code>
+
 
 # Download do python
 Intale o <a href="https://www.python.org/downloads/" target="_blank"> python</a> de acordo com a versão do seu PC.
@@ -22,9 +22,9 @@ Ainda via terminal/prompt/shell navega até o pasta do projeto "python-fake-api"
 Com ambiente ativado vamos instalar as bibliotecas. As libs estão dentro do arquivo <code>requeriments.txt</code>, para facilitar vamos executar o comando <code>pip install -r requirements.txt</code> que instalará todas as dependencias contidas no arquivo.
 
 # API Utilizada
-URL: <a href="https://jsonplaceholder.typicode.com/todos" target="_blank"> https://jsonplaceholder.typicode.com/todos</a><br/>
-Método: <code>GET</code> <br/>
-Credencial: <code>NÃO</code>
+<b>URL</b>: <a href="https://jsonplaceholder.typicode.com/todos" target="_blank"> https://jsonplaceholder.typicode.com/todos</a><br/>
+<b>Método</b>: <code>GET</code> <br/>
+<b>Credencial</b>: <code>NÃO</code>
 
 
 # Executando o projeto.
@@ -34,14 +34,14 @@ Com as devidas libs instaladas e projeto com ambiente ativo, vamos executar o pr
 Obs: Caso você já tenha algum serviço rodando nessa porta, mude no arquivo <code>main.py</code> e procure a linha <code>app.run(host='127.0.0.1', port=8082, debug=True)</code>. Mude para porta que deseja e compile novamente o projeto.
 
 # Rotas do projeto.
-rota1: <code>http://localhost:8082/all</code> <br/>
+<b>rota1:</b> <code>http://localhost:8082/all</code> <br/>
 Essa rota consome uma API pulbica via <code>GET</code>, onde atualmente contém 200 registros. basicamente buscamos os dados que estão no formato JSON e convertemos para um Dataframe através da biblioteca pandas. Após convertemos para um DF, exibimos os resultados no navegador em uma tabela HTML (uma das funções do pandas faz essa conversão). 
 <br/><br/>
-rota2: <code>http://localhost:8082/filter/true/like</code> <br/>
+<b>rota2:</b> <code>http://localhost:8082/filter/true/like</code> <br/>
 Essa rota consome uma API pulbica via <code>GET</code>, onde atualmente contém 200 registros. Nessa  rota perceba na url após a palavra <code>filter</code> temos mais 2 palavras, que na verdade são parametros. Como funciona? Como exemplo, onde está a palavra <code>true</code> significa <b>o que você deseja buscar dentro do datraframe</b>, e a palavra <code>like</code> é o tipo de busca, podendo ser like ou start.<br/>
 
-Exemplo1: <code>http://localhost:8082/filter/lorem/start</code> <br/>
+<b>Exemplo1</b>: <code>http://localhost:8082/filter/lorem/start</code> <br/>
 Neste exemplo quero buscar todas as palavras que <b>COMEÇAM</b> com a palavra <code>lorem</code> <br/><br/>
 
-Exemplo2: <code>http://localhost:8082/filter/true/like</code> <br/>
+<b>Exemplo2</b>: <code>http://localhost:8082/filter/true/like</code> <br/>
 Neste exemplo quero buscar todos registros que <b>CONTÉM</b> o valor <code>true</code> <br/><br/>
