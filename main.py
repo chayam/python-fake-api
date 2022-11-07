@@ -1,10 +1,10 @@
 
 # [START gae_python37_app]
 from flask import Flask
-from dotenv import load_dotenv
-import os,logging
 from services.FakeApi import FakeApi
+from models.FakeExample import FakeExample
 import pandas as pd
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,7 +17,9 @@ def all():
     response = fa.getTodos()
        
     if response is not None:
+        model = FakeExample()
         dataframe = pd.DataFrame(data=response['body'])
+        dataframe = model.transformData(dataframe)
         return dataframe.to_html()   
     return 'Não há dados'
 
@@ -26,16 +28,14 @@ def all():
 def allfilter(filter:str,typefilter:str):
     fa = FakeApi()
     response = fa.getTodos()
-       
+    
     if response is not None:
+        model = FakeExample()
         dataframe = pd.DataFrame(data=response['body'])
+        dataframe = model.transformData(dataframe)       
         # dataframe =  dataframe.loc[dataframe['title'].str.contains(filter, case=False)] # igual ao like %string%
         # dataframe =  dataframe.loc[dataframe['title'].str.match(filter, case=False)] # igual ao like string%
-        if typefilter=='like':
-            dataframe= dataframe[dataframe.apply(lambda row: row.astype(str).str.contains(filter, case=False).any(), axis=1)] # igual ao like %string%, mas procurando em todas as colunas
-        elif typefilter=='start':
-            dataframe= dataframe[dataframe.apply(lambda row: row.astype(str).str.match(filter, case=False).any(), axis=1)] # igual ao like string%, mas procurando em todas as colunas
-        
+        dataframe = model.filterExample(dataframe,filter,typefilter)
         dataframe = dataframe.reset_index(drop=True)
         return dataframe.to_html()   
     return 'Não há dados'

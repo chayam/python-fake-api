@@ -6,6 +6,7 @@ Pipfile.lock
 !/venv
 /venv/*
 services/__pycache__/*
+models/__pycache__/*
 __pycache__/*
 **/venv/
 **/__pycache__/
