@@ -1,0 +1,11 @@
+Pipfile
+Pipfile.lock
+/.idea
+.idea
+/venv
+!/venv
+/venv/*
+services/__pycache__/*
+__pycache__/*
+**/venv/
+**/__pycache__/
