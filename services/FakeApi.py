@@ -12,7 +12,9 @@ class FakeApi():
         
         path = '/todos'
         url = self.baseUrl+path
-        data = Util.genericCall(url=url,method=method,verify=True)   
+        print('aqui')
+        print(Util.getIntervalTime(type='minutes',time=1))
+        data = Util.genericCall(self,url=url,method=method,verify=True)   
         if (not data['error']):
             return data 
         return None

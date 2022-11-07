@@ -6,12 +6,7 @@ import unicodedata,re,time,pytz,requests,json,base64,pandas as pd,numpy as np
 
 import concurrent.futures
 from dotenv import load_dotenv
-import time, uuid,os,logging,pprint as prt
-from Logging import Logging as lg
-
-TZ='America/Sao_Paulo'
-PYTZ =pytz.timezone(TZ)
-
+import time, uuid,os,pprint as prt
 
 class Util:
 
@@ -159,7 +154,7 @@ class Util:
         
         return [dt_inicio,dt_fim]
         
-    def genericCall(url,body=None,verify=False,method='get',auth=None,headers=None):
+    def genericCall(self,url,body=None,verify=False,method='get',auth=None,headers=None):
         try:
             url = url
             if (method == 'post'):
