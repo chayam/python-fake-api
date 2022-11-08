@@ -8,10 +8,10 @@ Projeto que simula a busca de dados em uma API, e utiliza o pandas para manipula
 
 
 # Download do python
-Intale o <a href="https://www.python.org/downloads/" target="_blank"> python</a> de acordo com a versão do seu PC.
+Instale o <a href="https://www.python.org/downloads/" target="_blank"> python</a> de acordo com a versão do seu PC.
 
 # Instale o github
-Intale o <a href="https://git-scm.com/downloads" target="_blank">github</a> de acordo com o seu SO(Sistema Operacional).
+Instale o <a href="https://git-scm.com/downloads" target="_blank">github</a> de acordo com o seu SO(Sistema Operacional).
 # Faça o clone do projeto
 Com o git instalado e configurado, escolha um diretório onde o projeto ficará armazenado e via terminal dentro do diretório escolhido podemos fazer o download através do comando <code>git clone https://github.com/chayam/python-fake-api</code>.
 
