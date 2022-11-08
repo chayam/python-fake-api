@@ -11,7 +11,7 @@ Projeto que simula a busca de dados em uma API, e utiliza o pandas para manipula
 Intale o <a href="https://www.python.org/downloads/" target="_blank"> python</a> de acordo com a versão do seu PC.
 
 # Instale o github
-Intale o <a href="https://desktop.github.com/" target="_blank">github</a> de acordo com o seu SO(Sistema Operacional).
+Intale o <a href="https://git-scm.com/downloads" target="_blank">github</a> de acordo com o seu SO(Sistema Operacional).
 # Faça o clone do projeto
 Com o git instalado e configurado, escolha um diretório onde o projeto ficará armazenado e via terminal dentro do diretório escolhido podemos fazer o download através do comando <code>git clone https://github.com/chayam/python-fake-api</code>.
 
@@ -40,7 +40,7 @@ Essa rota consome uma API pulbica via <code>GET</code>, onde atualmente contém 
 <b>rota2:</b> <code>http://localhost:8082/filter/true/like</code> <br/>
 Essa rota consome uma API pulbica via <code>GET</code>, onde atualmente contém 200 registros. Nessa  rota perceba na url após a palavra <code>filter</code> temos mais 2 palavras, que na verdade são parametros. Como funciona? Como exemplo, onde está a palavra <code>true</code> significa <b>o que você deseja buscar dentro do datraframe</b>, e a palavra <code>like</code> é o tipo de busca, podendo ser like ou start.<br/>
 
-<b>Exemplo1</b>: <code>http://localhost:8082/filter/lorem/start</code> <br/>
+<b>Exemplo1</b>: <code>http://localhost:8082/filter/fugiat/start</code> <br/>
 Neste exemplo quero buscar todas as palavras que <b>COMEÇAM</b> com a palavra <code>lorem</code> <br/><br/>
 
 <b>Exemplo2</b>: <code>http://localhost:8082/filter/true/like</code> <br/>
